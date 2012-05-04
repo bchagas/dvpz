@@ -5,4 +5,12 @@
     %link{ rel: 'stylesheet', href: '/screen.css' }
 
   %body
-    = yield
+    %head
+      %h1= 'Vyruz'
+
+    %section.content
+      = haml :navigation
+      = yield
+
+    %footer
+      %p='© 2012 DASVYRUZPROJEKT. All Rights Reserved'
