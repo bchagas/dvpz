@@ -3,10 +3,14 @@
   %head
     %title= 'Das Vyruz Projekt'
     %link{ rel: 'stylesheet', href: '/screen.css' }
+    %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Droid+Serif:700,400' }
+    %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Bentham' }
 
   %body
-    %head
-      %h1= 'Vyruz'
+    %header
+      %h1
+        %a{ href: '/' }
+          %span= 'Vyruz'
 
     %section.content
       = haml :navigation
