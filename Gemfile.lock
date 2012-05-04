@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     chunky_png (1.2.5)
     compass (0.12.1)
@@ -10,6 +10,7 @@ GEM
     eventmachine (0.12.10)
     fssm (0.2.9)
     haml (3.1.4)
+    pg (0.13.2)
     rack (1.4.1)
     rack-protection (1.2.0)
       rack
@@ -32,7 +33,8 @@ PLATFORMS
 DEPENDENCIES
   compass
   haml
+  pg
   sass
   shotgun
-  sinatra (~> 1.3)
+  sinatra
   thin

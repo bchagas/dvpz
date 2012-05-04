@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'sinatra', '~> 1.3'
+gem 'sinatra'
 gem 'thin'
 gem 'haml'
 gem "pg"
