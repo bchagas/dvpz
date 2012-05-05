@@ -11,16 +11,21 @@ body
     margin: 0 auto
     position: relative
 
-  a, p, span
+  ol, ul
+    list-style: none
+
+  a, p, span, footer
     font:
       family: 'Droid Serif', sans-serif
 
   header
     > h1
       background: image-url('background-header.png') no-repeat center top
-      width: 219px
       height: 207px
       padding-top: 10px
+      position: relative
+      width: 219px
+      z-index: 5
 
       > a
         background: image-url('logo.png') no-repeat
@@ -44,7 +49,70 @@ body
           width: 100%
 
   .content
-    nav
-      background: image-url('background-menu.png') repeat-y center center
+    > nav
+      float: left
+      margin-top: -50px
+      position: relative
+      z-index: 1
       width: 219px
 
+      > ul
+        li
+          background: image-url('background-menu.png') repeat-y center bottom
+          display: block
+          width: 219px
+
+          &:first-child
+            padding-top: 54px
+
+          &:last-child
+            background: image-url('background-contact.png') no-repeat top center
+            padding: 8px 0 38px
+
+            a
+              background: none
+
+          a
+            background: image-url('background-line.png') no-repeat bottom center
+            color: $silver
+            display: block
+            font:
+              family: 'Droid Serif', sans-serif
+              size: 14px
+            padding: 16px 0 20px
+            text:
+              align: center
+              decoration: none
+              transform: uppercase
+
+            +transition-property(all)
+            +transition-duration(0.5s)
+            +transition-timing-function(easy)
+
+            &.current
+              color: $red-orange
+
+            span
+              clear: both
+              color: $silver
+              display: block
+              font:
+                size: 12px
+                style: italic
+              text:
+                transform: lowercase
+
+          &:hover
+            a
+              color: $red-orange
+
+  footer
+    background: image-url('background-footer.png') repeat
+    clear: both
+    font-size: 11px
+    margin: 0 auto
+    width: 960px
+
+    p
+      color: $silver
+      padding: 5px
