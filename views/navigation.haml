@@ -1,23 +1,26 @@
 %nav
   %ul
     %li
-      %a{ href: '/' }
+      %a{ href: '/', class: is_current?('/') }
         = 'Home'
         %span= 'Dvzpt'
 
-      %a{ href: '/about' }
+    %li
+      %a{ href: '/about', class: is_current?('/about') }
         = 'Sobre o Vyruz'
         %span= 'A epidemia'
 
-      %a{ href: '/gallery' }
+    %li
+      %a{ href: '/gallery', class: is_current('/gallery')  }
         = 'Exposição'
         %span= 'As mutações'
 
+    %li
       %a{ href: '/blog' }
         = 'Blog'
         %span= 'Últimas notícias'
-
-      %a{ href: '/contact' }
+    %li
+      %a{ href: '#' }
         = 'Contato'
         %span= 'infekte-se'
 
