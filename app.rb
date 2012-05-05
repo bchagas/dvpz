@@ -17,12 +17,18 @@ configure do
   ::I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'config', 'locales', '*.yml').to_s]
 end
 
-get '/about' do
-  haml :about
+get '/:file.css' do
+  sass :"#{params[:file]}"
 end
 
-get '/gallery' do
-  haml :gallery
+["/", "/about", "/gallery"].each do |path|
+  get path do
+    if path == '/'
+      haml :index
+    else
+      haml :"#{path}"
+    end
+  end
 end
 
 helpers do
