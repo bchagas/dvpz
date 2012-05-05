@@ -1,0 +1,4 @@
+%ul.social-networks
+  - %w(facebook twitter).each do |network|
+    %li
+      %a{ href: '' }= t(network, scope: [:header, :social])
