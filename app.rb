@@ -12,12 +12,9 @@ configure do
   set :sass, Compass.sass_engine_options
 end
 
-get '/:file.css' do
-  sass :"#{params[:file]}"
-end
-
-get '/' do
-  haml :index
+configure do
+  ::I18n.locale = 'pt'
+  ::I18n.load_path += Dir[File.join(File.dirname(__FILE__), 'config', 'locales', '*.yml').to_s]
 end
 
 get '/about' do
@@ -31,5 +28,9 @@ end
 helpers do
   def is_current?(path)
     'current' if path == request.path_info
+  end
+
+  def t(*args)
+    I18n.t(*args)
   end
 end

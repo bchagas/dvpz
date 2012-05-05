@@ -7,3 +7,4 @@ gem "pg"
 gem "sass"
 gem "compass"
 gem 'shotgun'
+gem 'i18n'
