@@ -23,3 +23,9 @@ end
 get '/about' do
   haml :about
 end
+
+helpers do
+  def is_current?(path)
+    'current' if path == request.path_info
+  end
+end
