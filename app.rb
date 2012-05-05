@@ -24,6 +24,10 @@ get '/about' do
   haml :about
 end
 
+get '/gallery' do
+  haml :gallery
+end
+
 helpers do
   def is_current?(path)
     'current' if path == request.path_info
