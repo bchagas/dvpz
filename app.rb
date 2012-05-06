@@ -21,10 +21,10 @@ get '/:file.css' do
   sass :"#{params[:file]}"
 end
 
-["/", "/about", "/gallery"].each do |path|
+["/", "/home", "/about", "/gallery"].each do |path|
   get path do
     if path == '/'
-      haml :index
+      redirect '/home'
     else
       haml :"#{path}"
     end
