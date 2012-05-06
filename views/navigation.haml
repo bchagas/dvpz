@@ -1,27 +1,7 @@
 %nav
   %ul
-    %li
-      %a{ href: '/', class: is_current?('/') }
-        = 'Home'
-        %span= 'Dvzpt'
-
-    %li
-      %a{ href: '/about', class: is_current?('/about') }
-        = 'Sobre o Vyruz'
-        %span= 'A epidemia'
-
-    %li
-      %a{ href: '/gallery', class: is_current?('/gallery') }
-        = 'Exposição'
-        %span= 'As mutações'
-
-    %li
-      %a{ href: '/blog' }
-        = 'Blog'
-        %span= 'Últimas notícias'
-    %li
-      %a{ href: '#' }
-        = 'Contato'
-        %span= 'infekte-se'
-
-
+    - { "home" => "dvzpt", "about" => "epidemy", "gallery" => "mutations", "blog" => "news", "contact" => "infect" }.each do |item, subtitle|
+      %li
+        %a{ href: "/#{item}", class: is_current?("/#{item}") }
+          = t item, scope: [:navigation]
+          %span= t subtitle, scope: [:navigation, :subtitles]
