@@ -51,6 +51,30 @@ body
             transform: uppercase
           width: 100%
 
+    .social-networks
+      background: image-url('background-black-translucid.png') repeat center center
+      float: right
+      overflow: hidden
+
+      li
+        display: block
+        height: 18px
+        width: 24px
+        float: left
+        padding: 5px
+        margin: 0 3px
+
+        &:last-child
+          margin-right: 0
+
+        a
+          display: block
+          text-indent: -9999px
+
+        @each $icon in facebook, twitter, youtube
+          &.#{$icon}
+            background: image-url('icons/#{$icon}.png') no-repeat center center
+
   .content
     > nav
       float: left
@@ -61,7 +85,7 @@ body
 
       > ul
         li
-          background: image-url('background-menu.png') repeat-y center bottom
+          background: image-url('background-black-translucid.png') repeat-y center bottom
           display: block
           width: 219px
 
