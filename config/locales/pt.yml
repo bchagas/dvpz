@@ -1,8 +1,22 @@
 pt:
+  footer:
+    copyright: '© 2012 DASVYRUZPROJEKT. All Rights Reserved'
+
   header:
     social:
       facebook: 'Facebook'
       twitter: 'Twitter'
 
-  footer:
-    copyright: '© 2012 DASVYRUZPROJEKT. All Rights Reserved'
+  navigation:
+    home: 'HOME'
+    about: 'Sobre o Vyruz'
+    gallery: 'Exposição'
+    blog: 'Blog'
+    contact: 'Contact'
+
+    subtitles:
+      dvzpt: 'Dvzpt'
+      epidemy: 'A epidemia'
+      mutations: 'As mutações'
+      news: 'Últimas notícias'
+      infect: 'Infekte-se'
