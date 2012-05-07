@@ -24,9 +24,10 @@ end
 ["/", "/home", "/about", "/gallery"].each do |path|
   get path do
     if path == '/'
-      redirect '/home'
+      haml :home, layout: true
     else
-      haml :"#{path}"
+      content_type 'text/javascript'
+      haml :"#{path}", layout: false
     end
   end
 end
