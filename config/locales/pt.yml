@@ -21,3 +21,8 @@ pt:
       mutations: 'As mutações'
       news: 'Últimas notícias'
       infect: 'Infekte-se'
+
+  pages:
+    about:
+      title: 'The Epidemik'
+      text: '<p>Ouviu-se relatos, boatos, histórias, de que estariam ocorrendo casos de desaparecimentos, torturas, ameaças, exposições agressivas com fotos e vídeos de pessoas amarradas e amordaçadas sendo obrigadas a se exporem, deixando algumas pessoas desesperadas e com medo.</p><p>Tal fato vem ocorrendo com frequência e agora vem tomando uma proporção muito mais significativa. Alguns vestígios foram deixados pelo responsável das tais ameaças, que ainda tem sua identidade desconhecida. Palavras e imagens com dizeres fortes como Infekt Yourself, Vyruz, Mutations e etc... foram identificados em um de seus vídeos.</p><p>Até o momento não foram encontradas supostas vítimas dos acontecimentos, algumas pessoas acham que isso não passa de uma lenda urbana qualquer, mas alertamos a todos para que caso haja qualquer caso semelhante ou situação parecida próxima a vocês, divulguem!</p><strong>A próxima vítima... Pode ser você!</strong>'

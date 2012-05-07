@@ -5,6 +5,8 @@
     %link{ rel: 'stylesheet', href: '/screen.css' }
     %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Droid+Serif:700,400' }
     %link{ rel: 'stylesheet', href: 'http://fonts.googleapis.com/css?family=Bentham' }
+    %script{ type: 'text/javascript', src: "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" }
+    %script{ type: 'text/javascript', src: "/javascripts/application.js" }
 
   %body
     %header
@@ -16,7 +18,9 @@
 
     %section.content
       = haml :navigation
-      = yield
+
+      %section{ class: humanize_path(request.path_info) }
+        = yield
 
     %footer
       %p= t('footer.copyright')

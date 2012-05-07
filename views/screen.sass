@@ -3,7 +3,7 @@
 @import colors
 
 body
-  background: image-url('backgrounds/default.jpg') no-repeat center center fixed
+  background: image-url('/images/backgrounds/default.jpg') no-repeat center center fixed
   +background-size(cover)
 
   header, .content
@@ -22,7 +22,7 @@ body
     overflow: hidden
 
     > h1
-      background: image-url('background-header.png') no-repeat center top
+      background: image-url('/images/background-header.png') no-repeat center top
       height: 207px
       float: left
       padding-top: 10px
@@ -31,7 +31,7 @@ body
       z-index: 5
 
       > a
-        background: image-url('logo.png') no-repeat
+        background: image-url('/images/logo.png') no-repeat
         color: $silver
         display: block
         height: 126px
@@ -52,7 +52,7 @@ body
           width: 100%
 
     .social-networks
-      background: image-url('background-black-translucid.png') repeat center center
+      background: image-url('/images/background-black-translucid.png') repeat center center
       float: right
       overflow: hidden
 
@@ -73,7 +73,7 @@ body
 
         @each $icon in facebook, twitter, youtube
           &.#{$icon}
-            background: image-url('icons/#{$icon}.png') no-repeat center center
+            background: image-url('/images/icons/#{$icon}.png') no-repeat center center
 
   .content
     > nav
@@ -85,7 +85,7 @@ body
 
       > ul
         li
-          background: image-url('background-black-translucid.png') repeat-y center bottom
+          background: image-url('/images/background-black-translucid.png') repeat-y center bottom
           display: block
           width: 219px
 
@@ -93,14 +93,14 @@ body
             padding-top: 54px
 
           &:last-child
-            background: image-url('background-contact.png') no-repeat top center
+            background: image-url('/images/background-contact.png') no-repeat top center
             padding: 8px 0 38px
 
             a
               background: none
 
           a
-            background: image-url('background-line.png') no-repeat bottom center
+            background: image-url('/images/background-line.png') no-repeat bottom center
             color: $silver
             display: block
             font:
@@ -133,8 +133,37 @@ body
             a
               color: $red-orange
 
+    > section
+      background: image-url('/images/background-black-translucid.png') repeat center center
+      color: $silver
+      float: left
+      font:
+        family: 'Droid Sans'
+        size: 14px
+      margin-left: 20px
+      margin-top: -140px
+      padding: 20px
+      width: 660px
+
+      > h1
+        text-transform: uppercase
+        margin-bottom: 20px
+
+      > img
+        margin-bottom: 20px
+
+        &.spinner
+          display: block
+          margin: 50px auto
+
+      > p
+        padding-bottom: 20px
+        text-align: justify
+        font-size: 12px
+        line-height: 20px
+
   footer
-    background: image-url('background-footer.png') repeat
+    background: image-url('/images/background-footer.png') repeat
     clear: both
     font-size: 11px
     margin: 0 auto
